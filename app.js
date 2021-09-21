@@ -48,6 +48,6 @@ function deleteCheck(e) {
   if (item.classList[0] === "trash-btn") {
     item.parentNode.remove();
   } else if (item.classList[0] === "completed-btn") {
-    item.parentNode.classList.add("completed");
+    item.parentNode.classList.toggle("completed");
   }
 }
